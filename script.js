@@ -80,3 +80,4 @@ document.addEventListener("DOMContentLoaded", function () {
     track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
 }
     
+
