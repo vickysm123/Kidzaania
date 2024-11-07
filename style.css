@@ -471,7 +471,7 @@ a {
   }
   .enrollment-counter {
     max-width: 100%;
-    padding: 10px;
+    padding: 15px 30px;
     /* display: block; */
   }
 
@@ -558,9 +558,9 @@ a {
 
 @media (max-width: 480px) {
     .carousel-item {
-        min-width: 100px;
-        height: 80px;
-        font-size: 0.9rem;
+        min-width: 236px;
+        height: 90px;
+        font-size: 19px;
     }
 }
 @media (max-width: 600px) {
@@ -583,10 +583,12 @@ a {
         }
         .grid-item img{
             transform: translateX(100px);
+            padding: 10px;
         }
         .footer-text{
             text-align: start;
         font-size: 14px;
+        color: #333;
         }
         .first-sectionpara{
             text-align: center;
@@ -594,5 +596,11 @@ a {
         }
         .first-sectionheading{
             font-size: 19px;
+        }
+        .carousel-button.left{
+            font-size: 30px;
+        }
+        .carousel-button.right{
+            font-size: 30px;
         }
   }
