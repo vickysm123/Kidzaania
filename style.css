@@ -1,0 +1,598 @@
+/* css to reset all the designs */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Oxygen-Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Oxygen-Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* css to reset all the designs */
+
+/* add styles on elements */
+
+.header {
+  border-bottom: 1px solid #e2e8f0;
+  background-color: #ffca02;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1.5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /* background-color: #101010; */
+  background-color: #fff;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link {
+  /* font-size: 1.6rem; */
+  font-size: 2rem;
+  font-weight: 400;
+  /* color: #475569; */
+  color: #1137a5;
+  /* change */
+}
+
+.nav-link:hover {
+  color: #482ff7;
+}
+
+.nav-logo {
+  /* font-size: 2.1rem; */
+  font-size: 3rem;
+  font-weight: 500;
+  /* color: #482ff7; */
+  color: #fff;
+}
+.nav-item {
+  position: relative;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu li a {
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-menu li a:hover {
+  color: #e22624;
+}
+.dropdown-toggle::after {
+  content: "▼";
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover > .dropdown-toggle::after {
+  transform: rotate(180deg) !important;
+}
+.dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Position dropdown below the nav item */
+  left: 0;
+  background-color: #0b43b0;
+  min-width: 150px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-item:hover > .dropdown-menu {
+  display: block;
+}
+.first-section {
+  background-color: #dfe9f4; /* Fallback color if custom variable is not defined */
+  background-image: url("images/banner-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  margin: 0;
+  padding: 20px;
+  text-align: center; /* Center-align text */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.first-sectionheading {
+    color: #4d4d4d;
+    font-family: "Poppins", Sans-serif;
+  margin: 13px;
+  font-size: 37px;
+  font-weight: 700;
+}
+.first-sectionpara {
+  font-size: 35px;
+  margin: 13px;
+  color: #048d01;
+  font-weight: 700;
+}
+.first-sectionspan {
+  margin: 13px;
+  font-size: 18px;
+  line-height: 2;
+  color: #00000a;
+}
+.first-sectionspan a:hover{
+    cursor: pointer;
+    color: #1a73e8;
+    transform: translateY(-2px);
+}
+/* Style for search input */
+#searchInput {
+  width: 80%;
+  max-width: 400px;
+  padding: 15px;
+  margin: 20px auto;
+  display: block;
+  font-size: 16px;
+  border: 1px solid #0b4aae;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px #2f4a88;
+}
+
+/* Style for item list */
+#itemList {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+#itemList li {
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hover effect for items */
+#itemList li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Optional: style for filtered results */
+#itemList li.hidden {
+  display: none;
+}
+.second-section {
+  margin: 0px;
+  background: #f0f8ff;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 11px 11px;
+}
+.enrollment-counter {
+  display: flex;
+  align-items: center;
+  /* background-color: #f0f8ff; Light background color */
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 250px;
+}
+
+/* Icon Styling */
+.enrollment-icon {
+  width: 50px; /* Adjust icon size */
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Text Styling */
+.enrollment-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Counter Styling */
+.counter-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.elementor-counter-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e90ff; /* Blue color */
+}
+
+.elementor-counter-number-suffix {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1e90ff;
+  margin-left: 2px;
+}
+
+/* Description Text */
+.enrollment-text p {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0 0;
+  width: 167px;
+}
+.container-second {
+  display: flex;
+  max-width: 100%;
+  margin-left: 12%;
+}
+.duration-elementsone {
+  width: 33%;
+}
+.duration-elementstwo {
+  width: 33%;
+}
+.duration-elementsthree {
+  width: 33%;
+}
+.button {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  min-height: 25vh; /* Full viewport height */
+}
+
+/* Button styling */
+.my-button {
+  padding: 15px 30px; /* Padding around text */
+  font-size: 18px; /* Button text size */
+  color: #ffffff; /* Text color */
+  background-color: #1aa0e5; /* Background color */
+  border: none; /* Removes border */
+  border-radius: 8px; /* Rounds the corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Transition for hover effects */
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+/* Hover and active states */
+.my-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.my-button:active {
+  background-color: #003f7f; /* Even darker on click */
+  transform: translateY(2px); /* Slight push effect on click */
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.carousel-track-wrapper {
+    overflow: hidden;
+    width: 80%; /* Adjust width as needed */
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 20px; /* Space between items */
+}
+
+.carousel-item {
+    min-width: 178px;
+    height: 120px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(200, 200, 200, 0.2);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.carousel-button {
+    font-size: 24px;
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.carousel-button.left {
+    left: 9%;
+    font-size: 50px;
+
+}
+
+.carousel-button.right {
+    right: 9%;
+    font-size: 50px;
+
+}
+.carousel-item:hover{
+    background: #1aa0e5;
+    cursor: pointer;
+    color: #fff;
+
+}
+.floating-buttons {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.floating-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.phone-button {
+    background-color: #1a73e8; /* Blue for the phone button */
+}
+
+.whatsapp-button {
+    background-color: #25D366; /* Green for WhatsApp button */
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    /* background-color: #fff; */
+    background-color: #222;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+  .dropdown-menu {
+    position: static;
+  }
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .enrollment-counter {
+    max-width: 100%;
+    padding: 10px;
+    /* display: block; */
+  }
+
+  .elementor-counter-number {
+    font-size: 30px;
+  }
+
+  .elementor-counter-number-suffix {
+    font-size: 24px;
+  }
+
+  .enrollment-text p {
+    font-size: 16px;
+    width: 130px;
+  }
+  .container-second {
+    display: block;
+  }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h2 {
+    text-align: center;
+    color: #3366cc;
+    margin: 30px;
+    font-size: 33px;
+    font-weight: bold;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .grid-item {
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .grid-item img {
+    width: 77px;
+    height: 77px;
+    margin-right: 15px;
+  }
+
+  .grid-item h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .grid-item p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .footer-text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-color: #ffca02;
+    margin-top: 30px;
+    padding: 22px;
+  }
+@media (max-width: 768px) {
+    .carousel-item {
+        min-width: 120px;
+        height: 100px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        min-width: 100px;
+        height: 80px;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 600px) {
+    .floating-buttons {
+        left: 10px;
+    }
+    .floating-button {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+    .grid-item{
+        display: inline-grid;
+        }
+        .grid-item img{
+            transform: translateX(100px);
+        }
+        .footer-text{
+            text-align: start;
+        font-size: 14px;
+        }
+        .first-sectionpara{
+            text-align: center;
+        font-size: 18px;
+        }
+        .first-sectionheading{
+            font-size: 19px;
+        }
+  }
