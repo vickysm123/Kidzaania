@@ -602,4 +602,9 @@ a {
         .carousel-button.right{
             font-size: 30px;
         }
+        .my-strong{
+            position: relative;
+        top: 10px;
+        display: block;
+        }
   }
