@@ -6,8 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Oxygen-Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Poppins", Sans-serif
 }
 
 html {
@@ -154,10 +153,11 @@ a {
   font-weight: 700;
 }
 .first-sectionpara {
-  font-size: 35px;
+  font-size: 30px;
   margin: 13px;
   color: #048d01;
-  font-weight: 700;
+  font-weight: 900;
+  font-family: "Poppins", Sans-serif
 }
 .first-sectionspan {
   margin: 13px;
@@ -499,7 +499,7 @@ a {
 
   h2 {
     text-align: center;
-    color: #3366cc;
+    color: #1aa0e5;
     margin: 30px;
     font-size: 33px;
     font-weight: bold;
@@ -543,7 +543,7 @@ a {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-    color: #000;
+    color: #333;
     background-color: #ffca02;
     margin-top: 30px;
     padding: 22px;
