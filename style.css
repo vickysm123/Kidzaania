@@ -558,7 +558,7 @@ a {
 
 @media (max-width: 480px) {
     .carousel-item {
-        min-width: 236px;
+        min-width: 255px;
         height: 90px;
         font-size: 19px;
     }
@@ -588,7 +588,7 @@ a {
         .footer-text{
             text-align: start;
         font-size: 14px;
-        color: #333;
+        color: #666;
         }
         .first-sectionpara{
             text-align: center;
