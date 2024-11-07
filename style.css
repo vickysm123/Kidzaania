@@ -558,7 +558,7 @@ a {
 
 @media (max-width: 480px) {
     .carousel-item {
-        min-width: 270px;
+        min-width: 296px;
         height: 90px;
         font-size: 19px;
     }
