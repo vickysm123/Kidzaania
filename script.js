@@ -81,3 +81,25 @@ document.addEventListener("DOMContentLoaded", function () {
 }
     
 
+const slides = document.querySelectorAll('.carousel-slide');
+
+function showSlide(index) {
+    let currentIndex = 0;
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    showSlide(currentIndex);
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+});
+
+// Initialize the first slide
+showSlide(currentIndex);
+

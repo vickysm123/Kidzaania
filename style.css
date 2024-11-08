@@ -642,7 +642,131 @@ h2 {
     font-size: 14px;
     line-height: 1.5;
 }
+.news-card p:hover{
+    cursor: pointer;
+    color: #1a73e8;
+}
+.grid-item p:hover{
+    cursor: pointer;
+    color: #1a73e8;
+}
 
+
+.review-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.review-carousel {
+    background-color: #eaf4f7;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    left: 12%;
+    width: 40%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide {
+    text-align: center;
+}
+
+.quote {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+}
+
+.user-title {
+    color: #777;
+    font-size: 14px;
+}
+
+.carousel-controls span {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #064394;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+}
+
+.carousel-controls .prev {
+    left: 10px;
+}
+
+.carousel-controls .next {
+    right: 10px;
+}
+
+.review-info {
+    max-width: 40%;
+    position: relative;
+    left: 12%;
+}
+
+
+.review-info h4 {
+    color: #064394;
+    font-weight: bold;
+    display:none;
+}
+
+.review-info h2 {
+    font-size: 25px;
+    color: #000;
+    margin: 10px 0;
+    text-align: start;
+
+}
+
+.review-info h2 span {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.review-info p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 2em;
+    color: #ffd600;
+    font-weight: bold;
+}
 /* Animation for the spinner */
 
 @media (max-width: 768px) {
@@ -737,5 +861,31 @@ h2 {
         max-width: 90%;
         max-height:205px;
     }
-  
+    @media (max-width: 768px) {
+        .review-section {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .review-carousel, .review-info {
+            width: 100%;
+            text-align: center;
+            position: relative;
+            left: 0%;
+        }
+    
+        .stats {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .review-info h2{
+font-size: 17px;
+    }
+    .review-info p {
+        text-align: start;
+        position: relative;
+        right: 48%;
+        width: 300px;
+    }
 }
