@@ -596,9 +596,9 @@ h2 {
 }
 
 .news-section p {
-    font-size: 3.1em;
-    margin-bottom: 30px;
-    font-weight: 700;
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 .news-section .highlight {
@@ -638,8 +638,9 @@ h2 {
 }
 
 .news-card p {
+    color: rgb(102, 102, 102);
     font-size: 14px;
-    color: #666;
+    line-height: 1.5;
 }
 
 /* Animation for the spinner */
@@ -721,7 +722,10 @@ h2 {
     }
 
     .news-section p {
-        font-size: 12px;
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+    
     }
     
     .news-cards {
@@ -731,6 +735,6 @@ h2 {
 
     .news-card {
         max-width: 90%;
-        max-height: 180px;
+        max-height:205px;
     }
 }
