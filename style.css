@@ -155,7 +155,7 @@ a {
 .first-sectionpara {
   font-size: 30px;
   margin: 13px;
-  color: #048d01;
+  color: #1aa0e5;
   font-weight: 900;
   font-family: "Poppins", Sans-serif;
 }
@@ -248,13 +248,13 @@ a {
 .elementor-counter-number {
   font-size: 28px;
   font-weight: 700;
-  color: #1e90ff; /* Blue color */
+  color: #1aa0e5; /* Blue color */
 }
 
 .elementor-counter-number-suffix {
   font-size: 25px;
   font-weight: 700;
-  color: #1e90ff;
+  color: #1aa0e5;
   margin-left: 2px;
 }
 
@@ -360,7 +360,7 @@ a {
 
 .carousel-button {
   font-size: 24px;
-  color: #007bff;
+  color: #1aa0e5;
   background: none;
   border: none;
   cursor: pointer;
@@ -422,7 +422,7 @@ a {
   transform: scale(1.1);
 }
 .footer {
-    background-color: #1a73e8; /* Adjust to your color */
+    background-color: #1137a5; /* Adjust to your color */
     color: #fff;
     padding: 20px;
 }
@@ -590,7 +590,7 @@ h2 {
 }
 
 .news-section h2 {
-    color: #1a73e8; /* Adjust color as needed */
+    color: #1aa0e5; /* Adjust color as needed */
     font-size: 20px;
     margin-bottom: 10px;
 }
@@ -602,7 +602,7 @@ h2 {
 }
 
 .news-section .highlight {
-    color: #1a73e8;
+    color: #1aa0e5;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -625,7 +625,7 @@ h2 {
 }
 
 .news-card .date {
-    color: #1a73e8;
+    color: #1aa0e5;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -644,11 +644,11 @@ h2 {
 }
 .news-card p:hover{
     cursor: pointer;
-    color: #1a73e8;
+    color: #1aa0e5;
 }
 .grid-item p:hover{
     cursor: pointer;
-    color: #1a73e8;
+    color: #1aa0e5;
 }
 
 
@@ -705,7 +705,7 @@ h2 {
 .carousel-controls span {
     cursor: pointer;
     font-size: 1.5em;
-    color: #064394;
+    color: #1aa0e5;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -728,7 +728,7 @@ h2 {
 
 
 .review-info h4 {
-    color: #064394;
+    color:#1aa0e5;
     font-weight: bold;
     display:none;
 }
@@ -742,8 +742,8 @@ h2 {
 }
 
 .review-info h2 span {
-    color: #1a73e8;
-    border-bottom: 2px solid #1a73e8;
+    color: #1aa0e5;
+    border-bottom: 2px solid #1aa0e5;
 }
 
 .review-info p {
