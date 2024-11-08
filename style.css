@@ -591,7 +591,7 @@ h2 {
 
 .news-section h2 {
     color: #1a73e8; /* Adjust color as needed */
-    font-size: 1.8em;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -737,4 +737,5 @@ h2 {
         max-width: 90%;
         max-height:205px;
     }
+  
 }
