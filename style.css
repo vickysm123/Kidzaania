@@ -717,11 +717,11 @@ h2 {
 }
 @media (max-width: 768px) {
     .news-section h2 {
-        font-size: 1.5em;
+        font-size: 20px;
     }
 
     .news-section p {
-        font-size: 1em;
+        font-size: 12px;
     }
     
     .news-cards {
@@ -731,6 +731,6 @@ h2 {
 
     .news-card {
         max-width: 90%;
-        max-height: 170px;
+        max-height: 180px;
     }
 }
