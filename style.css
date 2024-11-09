@@ -326,13 +326,20 @@ a {
   overflow: hidden;
   width: 80%; /* Adjust width as needed */
 }
-
+.carousel-tracks-wrapper {
+    overflow: hidden;
+    width: 80%; /* Adjust width as needed */
+  }
 .carousel-track {
   display: flex;
   transition: transform 0.4s ease-in-out;
   gap: 20px; /* Space between items */
 }
-
+.carousel-tracks {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 20px; /* Space between items */
+  }
 .carousel-item {
   min-width: 178px;
   height: 120px;
@@ -347,7 +354,20 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
-
+.carousel-items {
+    min-width: 178px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
 .carousel-item::before {
   content: "";
   position: absolute;
@@ -358,6 +378,16 @@ a {
   background-color: rgba(200, 200, 200, 0.2);
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
 }
+.carousel-items::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    background-color: rgba(200, 200, 200, 0.2);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  }
 
 .carousel-button {
   font-size: 24px;
@@ -462,6 +492,7 @@ a {
 .footer li {
     margin: 5px 0;
 }
+
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;

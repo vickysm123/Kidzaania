@@ -110,5 +110,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+let currentIndexs = 0;
+
+  function moveCarousel(direction) {
+    const track = document.querySelector('.carousel-tracks');
+    const items = document.querySelectorAll('.carousel-items');
+    const itemWidth = items[0].offsetWidth + 15; // Adjust based on item width and gap
+
+    currentIndexs += direction;
+    if (currentIndexs < 0) {
+        currentIndexs = 0;
+    } else if (currentIndexs > items.length - 6) { // 3 visible items
+        currentIndexs = items.length - 6;
+    }
+
+    track.style.transform = `translateX(-${currentIndexs * itemWidth}px)`;
+}
+
 
 
