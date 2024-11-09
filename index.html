@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kidzania</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -84,11 +86,11 @@
       <div class="container">
         <div class="col-sm-12">
           <h2 class="first-sectionheading">Learn Today Lead Tomorrow</h2>
-          <p class="first-sectionpara">
+          <p class="first-sectionpara" data-aos="fade-right">
             Achieve Your Career Goals With The Ideal Online <br />
             Degree Program From A World-Class University
           </p>
-          <span class="first-sectionspan"
+          <span class="first-sectionspan" 
             ><a>B.Ed</a> | <a>M.Ed</a> | <a>ANM</a> | <a>GNM</a> | <a>MBBS</a> | <a>B.Sc Nursing</a> | <a>M.Sc Nursing</a> | <a>PhD</a> |
         <a>LLB (3 Years)</a> | <a>LLB (5 Years)</a> |<br />
             <a>LLM</a> | <a>B.Tech</a> | <a>M.Tech</a> | <a>BBA</a> | <a>MBA</a> | <a>Executive MBA</a> | <a>B.A</a> | <a>M.A</a> |
@@ -326,7 +328,7 @@
   <div class="review-info">
       <h4>Student Review</h4>
       <h2>Student <span>Review</span></h2>
-      <p>We always strongly hold the hand of our students in every step of their goal. Give the best environment, support, material, guidance. Nowadays we are successfully growing with more than 2000+ students along with their 100% rate of favorable outcome.</p>
+      <p data-aos="fade-left">We always strongly hold the hand of our students in every step of their goal. Give the best environment, support, material, guidance. Nowadays we are successfully growing with more than 2000+ students along with their 100% rate of favorable outcome.</p>
       
       <div class="stats">
           <div class="stat-item">
@@ -382,6 +384,13 @@
             </div>
         </div>
     </footer>
-        <script src="script.js"></script>        
+        <script src="script.js"></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        once: true // Animation happens only once when in view
+    });
+</script>    
   </body>
 </html>
