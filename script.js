@@ -73,33 +73,42 @@ document.addEventListener("DOMContentLoaded", function () {
     currentIndex += direction;
     if (currentIndex < 0) {
         currentIndex = 0;
-    } else if (currentIndex > items.length - 3) { // 3 visible items
-        currentIndex = items.length - 3;
+    } else if (currentIndex > items.length - 6) { // 3 visible items
+        currentIndex = items.length - 6;
     }
 
     track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
 }
     
-
-const slides = document.querySelectorAll('.carousel-slide');
-
-function showSlide(index) {
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const nextButton = document.querySelector('.next');
+    const prevButton = document.querySelector('.prev');
     let currentIndex = 0;
-    slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'block' : 'none';
+
+    // Function to show the slide at the current index
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    // Show the initial slide
+    showSlide(currentIndex);
+
+    // Next button click event
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
     });
-}
 
-document.querySelector('.next').addEventListener('click', () => {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
+    // Previous button click event
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
 });
 
-document.querySelector('.prev').addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-});
 
-// Initialize the first slide
-showSlide(currentIndex);
+
 

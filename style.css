@@ -421,6 +421,7 @@ a {
 .floating-button:hover {
   transform: scale(1.1);
 }
+
 .footer {
     background-color: #1137a5; /* Adjust to your color */
     color: #fff;
@@ -767,6 +768,14 @@ h2 {
     color: #ffd600;
     font-weight: bold;
 }
+.carousel-slide {
+    display: none; /* Hide all slides by default */
+}
+
+.carousel-slide.active {
+    display: block; /* Show only the active slide */
+}
+
 /* Animation for the spinner */
 
 @media (max-width: 768px) {
