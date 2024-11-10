@@ -63,22 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
       updateCounter(); // Start the animation
     });
   });
-  let currentIndex = 0;
-
-  function moveCarousel(direction) {
-    const track = document.querySelector('.carousel-track');
-    const items = document.querySelectorAll('.carousel-item');
-    const itemWidth = items[0].offsetWidth + 15; // Adjust based on item width and gap
-
-    currentIndex += direction;
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    } else if (currentIndex > items.length - 6) { // 3 visible items
-        currentIndex = items.length - 6;
-    }
-
-    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-}
+  
     
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.carousel-slide');
@@ -110,22 +95,37 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-let currentIndexs = 0;
+
+let currentIndex = 0;
 
   function moveCarousel(direction) {
-    const track = document.querySelector('.carousel-tracks');
-    const items = document.querySelectorAll('.carousel-items');
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
     const itemWidth = items[0].offsetWidth + 15; // Adjust based on item width and gap
 
-    currentIndexs += direction;
-    if (currentIndexs < 0) {
-        currentIndexs = 0;
-    } else if (currentIndexs > items.length - 6) { // 3 visible items
-        currentIndexs = items.length - 6;
+    currentIndex += direction;
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    } else if (currentIndex > items.length - 6) { // 3 visible items
+        currentIndex = items.length - 6;
     }
 
-    track.style.transform = `translateX(-${currentIndexs * itemWidth}px)`;
+    track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
 }
+  
+let currentIndexes = 0;
 
+function moveCarousels(direct) {
+  const tracks = document.querySelector('.carousel-tracks');
+  const item = document.querySelectorAll('.carousel-items');
+  const itemWidths = item[0].offsetWidth + 14; // Adjust based on item width and gap
 
+  currentIndexes += direct;
+  if (currentIndexes < 0) {
+      currentIndexes = 0;
+  } else if (currentIndexes > item.length - 5) { // 3 visible items
+      currentIndexes = item.length - 6;
+  }
 
+  tracks.style.transform = `translateX(-${currentIndexes * itemWidths}px)`;
+}
