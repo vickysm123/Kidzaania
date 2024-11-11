@@ -535,6 +535,57 @@ a {
     color: #666;
     font-size: 14px;
 }
+.consultancy-section {
+    background-color: #f5faf7; /* Light background */
+    padding: 40px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.consultancy-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.number-one {
+    display: block;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+.number-one img{
+    height: 260px;
+}
+.no-text {
+    font-size: 30px;
+    font-weight: 900;
+    color: #333;
+    margin: 0;
+}
+
+.number-one h1 {
+    font-size: 5rem;
+    color: #2196f3; /* Blue color */
+    margin: 0;
+}
+
+.consultancy-title h2 {
+    color: #1b4b91; /* Dark blue color */
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.experience-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    margin-top: 5px;
+}
 @media only screen and (max-width: 768px) {
   .nav-menu {
     position: fixed;
@@ -1058,5 +1109,31 @@ font-size: 17px;
     .footers-container {
         flex-direction: column;
         justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    .consultancy-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .number-one h1 {
+        font-size: 6rem;
+    }
+
+    .number-one img{
+        height: 100px;
+    }
+   
+    .number-one{
+display: block;
+    }
+    .consultancy-title h2 {
+        font-size: 2.5rem;
+    }
+
+    .experience-text {
+        font-size: 1.2rem;
     }
 }
