@@ -813,7 +813,64 @@ h2 {
 }
 
 /* Animation for the spinner */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  @keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    70% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+  }
+  
+  .bounce-in {
+    animation: bounceIn 1s ease forwards;
+  }
+  @keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .zoom-in {
+    opacity: 0;
+    animation: zoomIn 0.9s ease forwards;
+  }  
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #1aa0e5;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
 
+/* Arrow Icon */
+.back-to-top span {
+    display: inline-block;
+    transform: translateY(2px); /* Slight vertical alignment */
+}
+
+/* Show Button when Scrolling */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
 @media (max-width: 768px) {
   .carousel-item {
     min-width: 120px;
@@ -944,5 +1001,14 @@ font-size: 17px;
         transform: translateX(-10px); /* Reduced distance for smaller screens */
         opacity: 0.9;
         transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+}
+@media (max-width: 600px) {
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2em;
+        bottom: 20px;
+        right: 20px;
     }
 }
