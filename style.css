@@ -862,7 +862,7 @@ h2 {
 
 /* Arrow Icon */
 .back-to-top span {
-    display: inline-block;
+    /* display: inline-block; */
     transform: translateY(2px); /* Slight vertical alignment */
 }
 
