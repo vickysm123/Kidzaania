@@ -146,3 +146,27 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+document.getElementById("applicationForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+    const whatsappConsent = document.getElementById("whatsappConsent").checked;
+
+    // Perform form validation or submission logic here
+    console.log({
+        firstName,
+        lastName,
+        email,
+        phone,
+        subject,
+        message,
+        whatsappConsent
+    });
+
+    alert("Form submitted successfully!");
+});

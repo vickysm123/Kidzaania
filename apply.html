@@ -54,7 +54,7 @@
         <a href="#" class="nav-logo"><img src="images/logo.jpg" /></a>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link dropdown-toggle">About Us</a>
@@ -94,8 +94,126 @@
         </div>
       </nav>
     </header>
-    
-  
+    <div class="floating-buttons">
+        <a
+          href="tel:097471 68336"
+          class="floating-button phone-button"
+          aria-label="Call"
+        >
+          <i class="fas fa-phone"></i
+        ></a>
+        <a
+          href="https://wa.me/1234567890"
+          target="_blank"
+          class="floating-button whatsapp-button"
+          aria-label="WhatsApp"
+        >
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    <section class="apply-form">
+        <div class="form-container">
+            <h2>Apply Now</h2>
+            <!-- <p class="required">(*) Required fields</p> -->
+            <form id="applicationForm">
+                <div class="form-row">
+                    <input type="text" id="firstName" placeholder="FIRST NAME*" required>
+                    <input type="text" id="lastName" placeholder="LAST NAME*" required>
+                </div>
+                <input type="email" id="email" placeholder="E-MAIL*" required>
+                <input type="tel" id="phone" placeholder="PHONE*" required>
+                <input type="text" id="subject" placeholder="SUBJECT*" required>
+                <textarea id="message" placeholder="YOUR MESSAGE"></textarea>
+                <label class="checkbox-container">
+                    <input type="checkbox" id="whatsappConsent">
+                    I AGREE TO RECEIVE MESSAGES RELATED TO MY QUERIES OVER WHATSAPP.
+                </label>
+                <button type="submit" class="submit-button">SEND & STAY IN TOUCH WITH US!</button>
+            </form>
+        </div>
+    </section>
+    <section class="apply-footer">
+        <div class="container">
+            <!-- <h2 class="zoom-in">Why Kidzania</h2>
+            <div class="grid">
+              <div class="grid-item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="800" data-aos-delay="200">
+                <img src="images/icon-1" alt="Career Counselling">
+                <div>
+                  <h3>Career Counselling and Guidance</h3>
+                  <p>Kidzania is a 20 years old and renowned institute which provides best career guidance with senior counsellor. We also help students with senior psychologist for life career plan.</p>
+                </div>
+              </div>
+              
+              <div class="grid-item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="800" data-aos-delay="200">
+                <img src="images/icon-2" alt="Teacher and Learning Guidance">
+                <div>
+                  <h3>Teacher and Learning Guidance</h3>
+                  <p>Kidzania provides teaching support and learning mechanism. Our group of teachers will take special classes during course session.</p>
+                </div>
+              </div>
+              
+              <div class="grid-item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="800" data-aos-delay="200">
+                <img src="images/icon-3" alt="Quick Admission Support">
+                <div>
+                  <h3>Quick Admission Support</h3>
+                  <p>We are providing best admission support from last 20 years. Kidzania working with 50+ renowned colleges and university. Students will get quick admission with all support.</p>
+                </div>
+              </div>
+              
+              <div class="grid-item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="800" data-aos-delay="200">
+                <img src="images/icon-4" alt="Assignment and Project Help">
+                <div>
+                  <h3>Assignment and Project Help</h3>
+                  <p>We have a lot of sample projects and assignments of previous students. We guide every students to design best project or assignment and also provide sample copy.</p>
+                </div>
+              </div>
+              
+              <div class="grid-item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="800" data-aos-delay="200">
+                <img src="images/icon-5" alt="Material Support">
+                <div>
+                  <h3>Material Support</h3>
+                  <p>We will provide all kind of materials and books during your course time. Our teachers also suggest you various important books and materials for students.</p>
+                </div>
+              </div>
+              
+              <div class="grid-item" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="800" data-aos-delay="200">
+                <img src="images/icon-6" alt="Examination and Presentation Support">
+                <div>
+                  <h3>Examination and Presentation Support</h3>
+                  <p>At the time of examination our institute support all students in every point view. Our all previous students are over satisfied with this excellent support.</p>
+                </div>
+              </div>
+            </div> -->
+        <div class="footer-text">
+            Find out the best Teacher Training Course in Kidzania, Kalliyoor Contact Us : <strong class="my-strong" style="font-size: 27px;
+            color: #000;
+            font-weight: 900;">097471 68336</strong> 
+          </div>
+    </section>
+   <section class="contact-section">
+    <div class="contact-container">
+      <h2>Want to talk to someone?</h2>
+      <p>You can talk with our senior counsellor and clear all your doubts regarding your admission and career.</p>
+      <div class="contact-infos">
+          <div class="contact-item">
+              <span>&#9993;</span> backoffice.larnedutech@gmail.com
+          </div>
+          <div class="contact-item">
+              <span>&#9742;</span> 9674660043 &nbsp; | &nbsp; 9674660045
+          </div>
+      </div>
+      <p>
+          Contact and visit our welcome center to talk with our counsellor regarding any doubts about admission or career.
+          Counselling and guidance is totally free, and whether you get admission with us or not, it does not matter.
+          Our institute always guides you according to your best future and suitability.
+      </p>
+      <div class="contact-links">
+          <a href="#">Use our enquiry form</a>
+          <a href="#">WhatsApp us</a>
+          <a href="#">Talk to one of our students</a>
+      </div>
+  </div>
+   </section>
       <footer class="footer">
         <div class="footer-container">
             <!-- Left Column: Company Information -->
@@ -138,10 +256,7 @@
         </div>
     </footer>
     <!-- Back to Top Button -->
-<div class="back-to-top" id="backToTop">
-  <span> <i class="fas fa-arrow-up"></i
-    ></span>
-</div>
+    
 <footer class="footers">
   <div class="footers-container">
       <div class="social-media">
@@ -159,7 +274,10 @@
       </div>
   </div>
 </footer>
-
+<div class="back-to-top" id="backToTop">
+    <span> <i class="fas fa-arrow-up"></i
+      ></span>
+  </div>
         <script src="script.js"></script>    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
