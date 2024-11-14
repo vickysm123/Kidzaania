@@ -756,6 +756,7 @@ textarea {
   .nav-menu.active {
     left: 0;
     z-index: 999;
+    position: absolute;
   }
   .dropdown-menu {
     position: static;

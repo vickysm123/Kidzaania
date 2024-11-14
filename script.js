@@ -170,3 +170,5 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
 
     alert("Form submitted successfully!");
 });
+
+
