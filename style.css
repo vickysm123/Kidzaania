@@ -31,13 +31,16 @@ a {
 .header {
   border-bottom: 1px solid #e2e8f0;
   background-color: #ffca02;
+ 
 }
+
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 1.5rem;
+  
 }
 
 .hamburger {
@@ -72,12 +75,26 @@ a {
   /* color: #475569; */
   color: #1137a5;
   font-family: var(--second-font);
+  position: relative;
   /* change */
 }
+.nav-link::after{
+  content: '';
+    width:0;
+    height: 3px;
+    background-color: #555;
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .4s;
 
-.nav-link:hover {
-  color: #482ff7;
 }
+.nav-link:hover::after{
+  width: 90%;
+}
+/* .nav-link:hover {
+  color: #482ff7;
+} */
 
 .nav-logo {
   /* font-size: 2.1rem; */
@@ -455,7 +472,7 @@ textarea {
 
 /* Hover and active states */
 .my-button:hover {
-  background-color: #0056b3; /* Darker color on hover */
+  background-color: #1aa0e5e3; /* Darker color on hover */
   transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
@@ -758,6 +775,7 @@ textarea {
   }
 
   .nav-link {
+    position: relative;
     color: #fff;
   }
 
@@ -876,7 +894,7 @@ h2 {
 .header-section1 {
     width: 100%;
     padding: 20px 20px;
-    background-color: #f8f9fa;
+    background-color: #ddd;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid #ddd;
@@ -922,14 +940,16 @@ h2 {
     display: flex;
     align-items: center;
     margin-right: 20px;
-    border: 1px solid #ddd;
-    padding: 5px 10px;
+    border: 1px solid #1137a5;
+    padding: 7px 10px;
     border-radius: 5px;
     color: #555;
 }
 
 .phone-icon {
-    margin-right: 5px;
+  margin-right: 5px;
+  color: #f30301;
+  font-size: 20px;
 }
 
 .phone-number {

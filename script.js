@@ -172,3 +172,17 @@ document.getElementById("applicationForm").addEventListener("submit", function(e
 });
 
 
+let lastScrollY = window.scrollY;
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+        // Scrolling down, hide header
+        header.style.top = "-100px"; // Adjust based on header height
+    } else {
+        // Scrolling up, show header
+        header.style.top = "0";
+    }
+    lastScrollY = window.scrollY;
+});
+
