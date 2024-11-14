@@ -1296,7 +1296,7 @@ h2 {
 }
 @media (max-width: 768px) {
     .news-section h2 {
-        font-size: 20px;
+        font-size: 33px;
     }
     news-section .highlight{
         font-size: 44px;
@@ -1316,7 +1316,7 @@ h2 {
 
     .news-card {
         max-width: 90%;
-        max-height:205px;
+        max-height:max-content;
     }
     @media (max-width: 768px) {
         .review-section {
