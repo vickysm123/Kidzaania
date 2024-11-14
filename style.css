@@ -312,6 +312,7 @@ textarea {
   font-size: 18px;
   line-height: 2;
   color: #00000a;
+  font-family: var(--body-font);
 }
 .first-sectionspan a:hover {
   cursor: pointer;
@@ -396,7 +397,7 @@ textarea {
 .elementor-counter-number {
   font-size: 28px;
   font-weight: 700;
-  
+  font-family: var(--body-font);
   color: #1aa0e5; /* Blue color */
 }
 
@@ -449,6 +450,7 @@ textarea {
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+  font-family: var(--body-font);
 }
 
 /* Hover and active states */
@@ -502,6 +504,7 @@ textarea {
   color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  font-family: var(--body-font);
 }
 .carousel-items {
     min-width: 178px;
@@ -632,6 +635,7 @@ textarea {
 .footer li {
     font-size: 15px;
     line-height: 1.5;
+    font-family: var(--body-font);
 }
 
 .footer ul {
@@ -715,6 +719,7 @@ textarea {
     font-weight: 900;
     color: #333;
     margin: 0;
+    font-family: var(--second-font);
 }
 
 .number-one h1 {
@@ -728,6 +733,7 @@ textarea {
     font-size: 2rem;
     font-weight: bold;
     margin: 0;
+    font-family: var(--second-font);
 }
 
 .experience-text {
@@ -854,6 +860,7 @@ h2 {
   color: #666;
   font-size: 14px;
   line-height: 1.5;
+  font-family: var(--body-font);
 }
 
 .footer-text {
@@ -864,6 +871,7 @@ h2 {
   background-color: #ffca02;
   margin-top: 30px;
   padding: 22px;
+  font-family: var(--body-font);
 }
 .header-section1 {
     width: 100%;
@@ -928,6 +936,7 @@ h2 {
     /* font-weight: bold; */
     font-size: 18px;
     cursor: pointer;
+    font-family: var(--body-font);
 }
 
 .apply-now {
@@ -1021,7 +1030,7 @@ h2 {
     color: rgb(102, 102, 102);
     font-size: 14px;
     line-height: 1.5;
-   
+   font-family: var(--body-font);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 .news-card p:hover{
@@ -1064,6 +1073,7 @@ h2 {
     font-size: 14px;
     color: #000;
     margin-bottom: 10px;
+    font-family: var(--body-font);
 }
 
 .user-image {
@@ -1077,11 +1087,14 @@ h2 {
     font-weight: bold;
     color: #000;
     font-size: 14px;
+    margin-bottom: 5px;
+    font-family: var(--second-font);
 }
 
 .user-title {
     color: #777;
     font-size: 14px;
+    font-family: var(--body-font);
 }
 
 .carousel-controls span {
@@ -1139,6 +1152,7 @@ h2 {
     color: #555;
     font-size: 14px;
     margin: 10px 0;
+    font-family: var(--body-font);
 }
 
 .stats {
@@ -1397,6 +1411,7 @@ display: block;
 
     .experience-text {
         font-size: 1.2rem;
+        font-family: var(--body-font);
     }
 }
 @media (max-width: 768px) {
