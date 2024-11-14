@@ -396,6 +396,7 @@ textarea {
 .elementor-counter-number {
   font-size: 28px;
   font-weight: 700;
+  
   color: #1aa0e5; /* Blue color */
 }
 
@@ -412,6 +413,7 @@ textarea {
   color: #333;
   margin: 5px 0 0;
   width: 191px;
+  font-family: var(--second-font);
 }
 .container-second {
   display: flex;
