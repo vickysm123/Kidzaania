@@ -133,7 +133,7 @@ function moveCarousels(direct) {
 const backToTopButton = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 200) { // Show after scrolling 200px
+    if (window.scrollY > 100) { // Show after scrolling 200px
         backToTopButton.classList.add('show');
     } else {
         backToTopButton.classList.remove('show');
