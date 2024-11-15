@@ -1300,6 +1300,8 @@ h2 {
   .footer-text {
     font-size: 14px;
     color: #666;
+    width: 100%;
+    padding: 16px;
   }
   .first-sectionpara {
     text-align: center;
