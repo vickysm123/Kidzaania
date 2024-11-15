@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   
       let currentValue = parseInt(fromValue);
-      const increment = (toValue - fromValue) / (duration / 50); // Speed of the animation
+      const increment = (toValue - fromValue) / (duration / 20); // Speed of the animation
   
       function updateCounter() {
         if (currentValue < toValue) {
