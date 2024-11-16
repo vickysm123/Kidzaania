@@ -1513,7 +1513,9 @@ font-size: 17px;
         gap: 20px; */
         display: none;
     }
-
+.consultancy-section{
+  display: none;
+}
     .number-one h1 {
         font-size: 6rem;
     }
