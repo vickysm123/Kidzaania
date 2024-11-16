@@ -54,8 +54,8 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  /* background-color: #101010; */
   background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .nav-menu {
@@ -293,6 +293,67 @@ textarea {
 .contact-links a:hover {
     color: #008ecc;
 }
+
+
+.container3 {
+  max-width: 1200px;
+  margin: 50px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+     
+    }
+
+    .content {
+      flex: 1 1 500px;
+      padding: 20px;
+    }
+
+    .content h2 {
+      color: #1aa0e5;
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      margin-bottom: 15px;
+      font-size: 15px;
+      font-family: var(--body-font);
+      line-height: 1.8;
+    }
+
+    .highlights {
+      background-color: #f1f1f1;
+      padding: 13px;
+      font-weight: 700;
+      font-size: 16px;
+      font-family: var(--body-font);
+      margin: 38px 0px;
+      line-height: 1.9;
+    }
+
+    .image-container {
+      flex: 1 1 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .image-container .caption {
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-top: -1px;
+      width: 100%;
+      font-size: 20px;
+    }
 
 .first-section {
   background-color: #dfe9f4; /* Fallback color if custom variable is not defined */
@@ -1383,6 +1444,16 @@ h2 {
             flex-direction: column;
             gap: 10px;
         }
+    }
+    @media (max-width: 768px) {
+      .container3 {
+        flex-direction: column;
+        margin-top: -20px;
+      }
+
+      .content, .image-container {
+        flex: 1 1 100%;
+      }
     }
     .review-info h2{
 font-size: 17px;
