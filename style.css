@@ -1485,7 +1485,7 @@ h2 {
       .container3 {
         flex-direction: column;
         margin: 0;
-        
+        padding: 20px;
       }
 
       .content, .image-container {
