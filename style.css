@@ -8,6 +8,7 @@
   box-sizing: border-box;
   --body-font: "Montserrat", sans-serif;
   --second-font: "Carter One", system-ui;
+  /* background: rgb(255, 255, 255) */
 }
 
 html {
@@ -1074,7 +1075,7 @@ h2 {
   max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 20px 20px;
+    padding: 0px 20px;
 }
 
 .news-section h2 {
@@ -1394,6 +1395,9 @@ display: block;
 margin-left: auto;
 margin-right: auto;
   }
+  .container{
+    padding: 0px 20px 0px 20px;
+  }
   .footer-text {
     font-size: 14px;
     color: #666;
@@ -1482,10 +1486,10 @@ margin-right: auto;
             padding: 20px;
         }
         .second-section{
-          padding: 20px;
+          padding: 20px 20px 0px 20px;
         }
         .button-section{
-          padding: 20px;
+          padding: 20px 20px 0px 20px;
         }
         .zoom-in h2{
           padding: 20px;
@@ -1510,7 +1514,7 @@ margin-right: auto;
       .container3 {
         flex-direction: column;
         margin: 0;
-        padding: 20px 0px;
+        padding: 0px 20px 0px 20px;
       }
 
       .content, .image-container {
