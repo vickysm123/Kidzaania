@@ -323,8 +323,8 @@ textarea {
   font-size: 30px;
   margin: 13px;
   color: #1aa0e5;
-  font-weight: 900;
-  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+  font-family: var(--body-font);
 }
 .first-sectionspan {
   margin: 13px;
@@ -708,6 +708,7 @@ textarea {
 .copyright p {
     color: #666;
     font-size: 14px;
+    font-family: var(--body-font);
 }
 .consultancy-section {
     background-color: #f5faf7; /* Light background */
