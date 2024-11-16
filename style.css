@@ -396,6 +396,7 @@ textarea {
   color: #00000a;
   font-family: var(--body-font);
   font-weight: 600;
+  letter-spacing: 2px;
 }
 .first-sectionspan a:hover {
   cursor: pointer;
