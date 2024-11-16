@@ -1456,6 +1456,11 @@ h2 {
               font-size: 15px;
           line-height: 1.5;
           }
+          .highlights{
+            text-align: justify;
+            line-height: 1.7;
+            color: #000000db;
+          }
       }
     @media (max-width: 768px) {
         .review-section {
