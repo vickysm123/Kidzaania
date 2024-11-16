@@ -328,10 +328,11 @@ textarea {
 }
 .first-sectionspan {
   margin: 13px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 2;
   color: #00000a;
   font-family: var(--body-font);
+  font-weight: 600;
 }
 .first-sectionspan a:hover {
   cursor: pointer;
@@ -764,6 +765,7 @@ textarea {
     margin-top: 5px;
 }
 @media only screen and (max-width: 768px) {
+ 
   .nav-menu {
     position: fixed;
     left: -100%;
