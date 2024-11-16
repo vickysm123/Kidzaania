@@ -57,7 +57,9 @@ a {
   background-color: #fff;
   /* background-color: #fff; */
 }
-
+.university-carousel{
+  padding: 20px;
+}
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -308,7 +310,7 @@ textarea {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-     
+     padding: 20px;
     }
 
     .content {
@@ -786,7 +788,7 @@ textarea {
 }
 .consultancy-section {
     background-color: #f5faf7; /* Light background */
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
 }
@@ -1069,7 +1071,7 @@ h2 {
   max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px 20px;
 }
 
 .news-section h2 {
@@ -1152,7 +1154,7 @@ h2 {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 20px;
+    padding: 20px 20px;
     gap: 20px;
     align-items: center;
 }
