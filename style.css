@@ -1375,6 +1375,7 @@ h2 {
     grid-template-columns: 1fr;
     text-align: center;
     overflow: hidden;
+    padding: 20px 0px
   }
   .grid-item {
     display: inline-grid;
@@ -1387,7 +1388,8 @@ h2 {
     font-size: 14px;
     color: #666;
     width: 100%;
-    padding: 16px;
+    padding: 20px;
+    margin: 0;
   }
   .first-sectionpara {
     text-align: center;
@@ -1467,8 +1469,21 @@ h2 {
             flex-direction: column;
             align-items: center;
             overflow: hidden;
+            padding: 20px;
         }
-    
+        .second-section{
+          padding: 20px;
+        }
+        .button-section{
+          padding: 20px;
+        }
+        .zoom-in h2{
+          padding: 20px;
+          margin: 0;
+        }
+    section.university-carousel{
+       padding: 20px;
+    }
         .review-carousel, .review-info {
             width: 100%;
             text-align: center;
