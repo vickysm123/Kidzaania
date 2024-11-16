@@ -320,6 +320,7 @@ textarea {
       font-size: 15px;
       font-family: var(--body-font);
       line-height: 1.8;
+      color: #5a676f;
     }
 
     .highlights {
@@ -1246,10 +1247,11 @@ h2 {
 }
 
 .review-info p {
-    color: #555;
+    color: #5a676f;
     font-size: 14px;
     margin: 10px 0;
     font-family: var(--body-font);
+    line-height: 1.5;
 }
 
 .stats {
