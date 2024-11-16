@@ -574,7 +574,7 @@ textarea {
     gap: 20px; /* Space between items */
   }
 .carousel-item {
-  margin: 5px;
+  
   min-width: 178px;
   height: 120px;
   background-color: #f5f5f5;
@@ -590,6 +590,7 @@ textarea {
   font-family: var(--body-font);
 }
 .carousel-items {
+  margin: 5px;
     min-width: 178px;
     height: 120px;
     background-color: #ffffff;
