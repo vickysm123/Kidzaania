@@ -1449,7 +1449,7 @@ h2 {
     @media (max-width: 768px) {
       .container3 {
         flex-direction: column;
-        margin-top: -20px;
+        margin-top: -10px;
       }
 
       .content, .image-container {
