@@ -40,7 +40,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1.5rem;
+  padding: 15px;
   
 }
 
@@ -73,7 +73,7 @@ a {
 
 .nav-link {
   /* font-size: 1.6rem; */
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   /* color: #475569; */
   /* color: #1137a5; */
@@ -336,11 +336,11 @@ textarea {
     .highlights {
       background-color: #f1f1f1;
       padding: 13px 13px 34px 7px;
-      font-weight: 400;
-      font-size: 15px;
+      font-weight: 700;
+      font-size: 14px;
       font-family: var(--body-font);
       margin: 0px 15px 20px 15px;
-      line-height: 1.8;
+      line-height: 1.6;
     }
 
     .image-container {
@@ -361,7 +361,7 @@ textarea {
       color: white;
       padding: 15px;
       text-align: center;
-      margin-top: -1px;
+      margin-top: -52px;
       width: 100%;
       font-size: 18px;
       font-family: var(--body-font);
@@ -369,7 +369,7 @@ textarea {
 
 .first-section {
   background-color: #dfe9f4; /* Fallback color if custom variable is not defined */
-  background-image: url("images/banner-bg.webp");
+  background-image: url("images/banner-bg\ \(1\).webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -457,7 +457,7 @@ textarea {
   margin: 0px;
   background: #f0f8ff;
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 11px 11px;
+  padding: 15px;
 }
 .enrollment-counter {
   display: flex;
@@ -467,7 +467,9 @@ textarea {
   border-radius: 8px;
   max-width: 250px;
 }
-
+.button-section{
+  padding: 0;
+}
 /* Icon Styling */
 .enrollment-icon {
   width: 50px; /* Adjust icon size */
